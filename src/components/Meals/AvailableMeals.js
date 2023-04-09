@@ -37,7 +37,7 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const res = await fetch('https://react-https-2d326-default-rtdb.firebaseio.com/');
+      const res = await fetch('https://react-https-2d326-default-rtdb.firebaseio.com/', { mode: 'no-cors' });
       const data = await res.json();
 
       console.log(data);
